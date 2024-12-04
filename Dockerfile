@@ -4,7 +4,6 @@ FROM ubuntu:latest
 # Update the package list and install build-essential (includes GCC)
 RUN apt-get update && apt-get install -y \
     build-essential \
-    nano \
     && apt-get clean
 
 # Set the working directory inside the container
