@@ -7,7 +7,7 @@ A typical use case may be to use bind mounts to run C programs in a container, w
 ## Usage
 
 ```bash
-docker build -t ubuntu-c-env
+docker build -t ubuntu-c-env .
 ```
 
 To run the container, navigate to the directory containing the C source code and run the following command:
