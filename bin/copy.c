@@ -1,14 +1,22 @@
 #include <string.h>
 #include <stdio.h>  
 
-int main () {
-    char s1[5];
-    char s2[5];
+int main() {
+    char s1[6]; // Allocate space for 5 characters + null terminator
+    char s2[6];
+    char s3[6]; // Allocate space for s3
 
-    printf("Enter 5 character long word.\n");
+    printf("Enter a 5-character long word:\n");
     fgets(s1, sizeof(s1), stdin);
 
-    strcpy(s2,s1);
-    printf("%s\n", s2);
+    strcpy(s2, s1);
+
+    strncpy(s3, s1, sizeof(s2) - 1);
+
+
+    // Print the results
+    printf("This is s2: %s\n", s2);
+    printf("This is s3: %s\n", s3);
+    printf("This is s1: %s\n", s1);
     return 0;
 }
