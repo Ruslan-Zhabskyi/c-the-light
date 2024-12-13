@@ -11,7 +11,7 @@ int main() {
 
     strcpy(s2, s1);
 
-    strncpy(s3, s1, sizeof(s2) - 1);
+    strncpy(s3, s1, 2);
 
 
     // Print the results
